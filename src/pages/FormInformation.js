@@ -1,8 +1,10 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import Input from "../components/Input"
 import Header from "../components/Header"
 
 const FormInformation = () => {
+  const navigate = useNavigate()
   return (
     <div className="grid grid-cols-1 md:grid-cols-12">
       <div className="mb-10  sm:h-screen md:col-span-7 bg-gray-100">
@@ -129,10 +131,16 @@ const FormInformation = () => {
             اختبار ماكس لوشر التشخيصي
           </h1>
           <div className="flex flex-col gap-10 mt-2">
-            <button className=" bg-gray-200 text-green-700 hover:bg-green-600 hover:shadow-lg px-6 rounded-full py-3">
-              الملف الشخصي
+            <button
+              onClick={() => navigate("/first-test")}
+              className=" bg-gray-200 text-green-700 hover:bg-green-600 hover:shadow-lg px-6 rounded-full py-3"
+            >
+              بدا الاختبار
             </button>
-            <button className=" bg-green-500 text-white hover:bg-gray-200 hover:text-green-700 px-8 rounded-full py-3">
+            <button
+              onClick={() => navigate(-1)}
+              className=" bg-green-500 text-white hover:bg-gray-200 hover:text-green-700 px-8 rounded-full py-3"
+            >
               رجوع
             </button>
           </div>

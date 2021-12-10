@@ -1,7 +1,9 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import Header from "../components/Header"
 
 const WellcomeScreen = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="sticky top-0 z-50 flex justify-end ">
@@ -18,7 +20,10 @@ const WellcomeScreen = () => {
           <button className=" bg-gray-200 text-green-700 hover:bg-green-600 hover:shadow-lg px-6 rounded-full py-3">
             الملف الشخصي
           </button>
-          <button className=" bg-green-500 text-white hover:bg-gray-200 hover:text-green-700 px-8 rounded-full py-3">
+          <button
+            onClick={() => navigate("/user-form")}
+            className=" bg-green-500 text-white hover:bg-gray-200 hover:text-green-700 px-8 rounded-full py-3"
+          >
             بدا الاختبار
           </button>
         </div>

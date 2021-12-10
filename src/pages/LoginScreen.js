@@ -1,7 +1,9 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import Header from "../components/Header"
 
 const LoginScreen = () => {
+  const navigate = useNavigate()
   return (
     <div className="grid grid-cols-1 md:grid-cols-10">
       <div className="mb-6 block md:col-span-7">
@@ -57,7 +59,10 @@ const LoginScreen = () => {
           </div>
 
           <div className="text-center">
-            <button className="mt-9 bg-green-400 text-white hover:bg-green-600 px-8 rounded-full py-3">
+            <button
+              onClick={() => navigate("/welcome")}
+              className="mt-9 bg-green-400 text-white hover:bg-green-600 px-8 rounded-full py-3"
+            >
               تسجيل الدخول
             </button>
           </div>
@@ -69,7 +74,10 @@ const LoginScreen = () => {
           قم بانشاء حساب جديد لبدء اختبار ماكس لوشر التشخيصي
         </p>
 
-        <button class=" mt-7 px-6 py-2 text-white transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-white focus:outline-none">
+        <button
+          onClick={() => navigate("/register")}
+          class=" mt-7 px-6 py-2 text-white transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-white focus:outline-none"
+        >
           انشاء حساب
         </button>
       </div>

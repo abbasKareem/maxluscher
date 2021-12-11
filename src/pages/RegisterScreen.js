@@ -12,7 +12,7 @@ const RegisterScreen = () => {
           انشاء حساب جديد
         </h1>
         <form className="flex flex-col items-center justify-center">
-          <div className="relative ml-20 flex items-center text-gray-300 focus-within:text-gray-600">
+          <div className="relative flex items-center text-gray-300 focus-within:text-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 absolute ml-3 md:ml-8 mt-10 pointer-events-none"
@@ -35,7 +35,7 @@ const RegisterScreen = () => {
             />
           </div>
 
-          <div className="relative ml-20 flex items-center text-gray-300 focus-within:text-gray-600">
+          <div className="relative flex items-center text-gray-300 focus-within:text-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 absolute ml-3 md:ml-8 mt-10 pointer-events-none"
@@ -58,7 +58,7 @@ const RegisterScreen = () => {
             />
           </div>
 
-          <div className="relative ml-20 flex items-center text-gray-300 focus-within:text-gray-600">
+          <div className="relative flex items-center text-gray-300 focus-within:text-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 absolute ml-3 md:ml-8 mt-10 pointer-events-none"

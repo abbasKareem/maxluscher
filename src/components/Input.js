@@ -2,7 +2,7 @@ import React from "react"
 
 const Input = ({ svg, placeholder, type, name }) => {
   return (
-    <div className="relative ml-20 flex items-center text-gray-300 focus-within:text-gray-600">
+    <div className="relative md:ml-20 flex items-center text-gray-300 focus-within:text-gray-600">
       {svg}
       <input
         type={type}

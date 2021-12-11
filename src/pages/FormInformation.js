@@ -7,14 +7,18 @@ const FormInformation = () => {
   const navigate = useNavigate()
   return (
     <div className="grid grid-cols-1 md:grid-cols-12">
-      <div className="mb-10  sm:h-screen md:col-span-7 bg-gray-100">
+      <Header />
+      <div className="mb-10 pb-10  sm:h-screen md:col-span-7 bg-gray-100">
         <div className="flex flex-col justify-center items-center  mt-20">
           <h1 className="text-center text-3xl text-green-500 mx-4 lg:mr-40">
             املا الاستمارة بمعلوماتك الشخصية
           </h1>
         </div>
 
-        <form className="flex flex-col items-start justify-center mr-5">
+        <form
+          action=""
+          className="flex flex-col items-start justify-center md:mr-5"
+        >
           <Input
             svg={
               <svg
@@ -122,7 +126,6 @@ const FormInformation = () => {
         </form>
       </div>
       <div className="md:col-span-5 bg-white">
-        <Header />
         <div className="flex flex-col mb-20  items-center">
           <h1 className="text-center text-3xl text-green-500 mb-9">
             اهلا بك عباس

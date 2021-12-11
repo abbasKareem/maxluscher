@@ -76,7 +76,7 @@ const LoginScreen = () => {
 
         <button
           onClick={() => navigate("/register")}
-          class=" mt-7 px-6 py-2 text-white transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-white focus:outline-none"
+          className=" mt-7 px-6 py-2 text-white transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-white focus:outline-none"
         >
           انشاء حساب
         </button>

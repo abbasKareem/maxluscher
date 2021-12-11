@@ -13,6 +13,13 @@ const LoginScreen = () => {
         </h1>
         <form className="flex flex-col items-center justify-center">
           <div className="relative flex items-center text-gray-300 focus-within:text-gray-600">
+            <input
+              type="email"
+              name="email"
+              placeholder="البريد الالكتروني"
+              className="w-80 h-12 mt-8 bg-gray-100 rounded-full font-semibold shadow-sm pl-12 border-gray-100 focus:outline-none focus:shadow-lg md:mx-4 md:w-12/12"
+            />
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 absolute ml-3 md:ml-8 mt-10 pointer-events-none"
@@ -27,12 +34,6 @@ const LoginScreen = () => {
                 d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
               />
             </svg>
-            <input
-              type="email"
-              name="email"
-              placeholder="البريد الالكتروني"
-              className="w-80 h-12 mt-8 bg-gray-100 rounded-full font-semibold shadow-sm pl-12 border-gray-100 focus:outline-none focus:shadow-lg md:mx-4 md:w-12/12"
-            />
           </div>
 
           <div className="relative flex items-center text-gray-300 focus-within:text-gray-600">

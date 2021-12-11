@@ -8,7 +8,7 @@ const Input = ({ svg, placeholder, type, name }) => {
         type={type}
         name={name}
         placeholder={placeholder}
-        className="w-80 h-12 mt-8 bg-white rounded-full font-semibold shadow-sm pl-12 border-gray-100 focus:outline-none focus:shadow-lg md:mx-4 md:w-12/12"
+        className="w-80 h-12 mt-8 bg-white rounded-full text-right font-semibold shadow-sm pl-12 pr-12 border-gray-100 focus:outline-none focus:shadow-lg md:mx-4 md:w-12/12"
       />
     </div>
   )
